@@ -1,1 +1,1 @@
-# Django-Shop-Games
+# Django Shop Games

@@ -1,0 +1,28 @@
+django-admin startproject myfirst
+
+source venv/bin/activate
+
+python manage.py migrate
+
+python manage.py makemigrations articles
+
+
+
+python ../../manage.py startapp articles
+
+python manage.py makemigrations articles
+
+python manage.py sqlmigrate articles 0001
+
+
+
+python manage.py shell
+
+python manage.py createsuperuser
+
+python manage.py collectstatic
+
+
+
+
+django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile helloworld
