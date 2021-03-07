@@ -1,7 +1,6 @@
 from .views import *
 from django.urls import path, include
 
-
 urlpatterns = [
     # home
     path("", include("shopgames.apps.home.urls")),
@@ -47,7 +46,6 @@ urlpatterns = [
     path("", include("shopgames.apps.derdetail.urls")),
     # passworforgot
     path("", include("shopgames.apps.passwordforgot.urls")),
-
 
     # passwordreset
     path("", include("shopgames.apps.passwordreset.urls")),

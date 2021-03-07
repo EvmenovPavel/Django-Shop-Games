@@ -1,8 +1,9 @@
 from django.views.generic import FormView
-from django import forms
-from django.contrib.auth.models import User
 from django.shortcuts import redirect
 from django.urls import reverse
+from shopgames.apps.utils import password_reset_token
+from django import forms
+from django.contrib.auth.models import User
 
 
 class PasswordResetForm(forms.Form):

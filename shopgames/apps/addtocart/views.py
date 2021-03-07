@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView
-from shopgames.apps.models import *
+from shopgames.apps.models import Cart, Product, CartProduct
+from shopgames.apps.utils import EcomMixin
 
 
 class AddToCartView(EcomMixin, TemplateView):

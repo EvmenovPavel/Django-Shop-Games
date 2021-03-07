@@ -1,6 +1,7 @@
-from shopgames.apps.models import *
+from shopgames.apps.models import Cart
 from django.views.generic import View
 from django.shortcuts import redirect
+from shopgames.apps.utils import EcomMixin
 
 
 class EmptyCartView(EcomMixin, View):

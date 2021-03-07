@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.views.generic import FormView
 from django.urls import reverse_lazy
 from django.contrib.auth import authenticate, login
-from shopgames.apps.models import *
+from shopgames.apps.models import Customer
+from shopgames.apps.utils import LoginForm
 
 
 class LoginView(FormView):

@@ -2,7 +2,8 @@ from django.views.generic import View, TemplateView, CreateView, FormView, Detai
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from shopgames.apps.models import *
+from shopgames.apps.models import Product, Admin, Order, ProductImage
+from shopgames.apps.utils import LoginForm
 from django import forms
 
 

@@ -1,8 +1,9 @@
 from django.views.generic import CreateView
-from shopgames.apps.models import *
+from shopgames.apps.models import Order, Cart
 from django import forms
 from django.urls import reverse_lazy, reverse
 from django.shortcuts import redirect
+from shopgames.apps.utils import EcomMixin
 
 
 class CheckoutForm(forms.ModelForm):

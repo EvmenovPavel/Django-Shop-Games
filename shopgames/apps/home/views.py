@@ -1,10 +1,12 @@
 from django.views.generic import TemplateView
 from django.core.paginator import Paginator
-from shopgames.apps.models import *
+from shopgames.apps.utils import EcomMixin
+from shopgames.apps.models import Product
 
 
 class HomeView(EcomMixin, TemplateView):
     template_name = "home/home.html"
+    extra_context = {"nav_item_home": "active"}
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -12,7 +14,6 @@ class HomeView(EcomMixin, TemplateView):
         all_products = Product.objects.all().order_by("-id")
         paginator = Paginator(all_products, 8)
         page_number = self.request.GET.get("page")
-        print(page_number)
         product_list = paginator.get_page(page_number)
         context["product_list"] = product_list
         return context

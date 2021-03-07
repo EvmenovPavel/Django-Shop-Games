@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView
-from shopgames.apps.models import *
+from shopgames.apps.models import Product
+from shopgames.apps.utils import EcomMixin
 
 
 class DetailsView(EcomMixin, TemplateView):

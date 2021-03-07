@@ -1,7 +1,9 @@
 from django.views.generic import FormView
 from django.core.mail import send_mail
 from django.conf import settings
-from shopgames.apps.models import *
+from shopgames.apps.models import Customer
+from shopgames.apps.utils import password_reset_token
+from django import forms
 
 
 class PasswordForgotForm(forms.Form):

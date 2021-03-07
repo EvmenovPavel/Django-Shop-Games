@@ -10,4 +10,4 @@ class KhaltiRequestView(View):
         context = {
             "order": order
         }
-        return render(request, "khaltirequest.html", context)
+        return render(request, "khaltirequest/khaltirequest.html", context)
