@@ -1,6 +1,6 @@
 {% extends 'adminpages/adminbase.html' %}
 
-{% block title %}All Orders {% endblock %}
+{% block title %}All Orders{% endblock %}
 
 {% block content %}
 <div class="container" >
@@ -28,7 +28,6 @@
                     <td >{{ order.created_at }}</td >
                     <td >{{ order.total }}</td >
                     <td >{{ order.order_status }}</td >
-
                 </tr >
                 {% endfor %}
                 </tbody >

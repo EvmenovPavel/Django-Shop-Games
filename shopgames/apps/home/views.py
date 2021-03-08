@@ -6,7 +6,7 @@ from shopgames.apps.models import Product
 
 class HomeView(EcomMixin, TemplateView):
     template_name = "home/home.html"
-    extra_context = {"nav_item_home": "active"}
+    extra_context = {"navitem": "home"}
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

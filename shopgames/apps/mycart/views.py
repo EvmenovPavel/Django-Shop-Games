@@ -5,7 +5,7 @@ from shopgames.apps.utils import EcomMixin
 
 class MyCartView(EcomMixin, TemplateView):
     template_name = "mycart/mycart.html"
-    extra_context = {"nav_item_mycart": "active"}
+    extra_context = {"navitem": "mycart"}
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

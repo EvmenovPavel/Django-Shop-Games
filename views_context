@@ -1,0 +1,10 @@
+class NameView(EcomMixin, TemplateView):
+    # template_name = None
+    # template_engine = None
+    # response_class = TemplateResponse
+    # content_type = None
+    # extra_context = {"":""}
+    # permanent = False
+    # url = None
+    # pattern_name = None
+    # query_string = False

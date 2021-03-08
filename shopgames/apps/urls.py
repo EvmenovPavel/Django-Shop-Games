@@ -4,6 +4,7 @@ from django.urls import path, include
 urlpatterns = [
     # home
     path("", include("shopgames.apps.home.urls")),
+    # path("", include("shopgames.apps.home.urls"), {"navitem": "home"}),
     # about
     path("", include("shopgames.apps.about.urls")),
     # search

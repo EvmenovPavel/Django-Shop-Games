@@ -5,7 +5,7 @@ from shopgames.apps.utils import EcomMixin
 
 class CategoriesView(EcomMixin, TemplateView):
     template_name = "categories/categories.html"
-    extra_context = {"nav_item_categories": "active"}
+    extra_context = {"navitem": "categories"}
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
